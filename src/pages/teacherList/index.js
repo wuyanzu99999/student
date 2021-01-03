@@ -1,6 +1,6 @@
 import { Component } from 'react'
 
-export default class componentName extends Component {
+export default class teachers extends Component {
     constructor(){
         super();
         this.state={
