@@ -1,0 +1,19 @@
+.control-box{
+    width: 997px;
+    height: 62px;
+    background-color: pink;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.left-teacher{
+    font-weight: normal;
+    font-size: 25px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.left-tit{
+    color: #333;
+}

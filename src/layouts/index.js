@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import "./index.css"
-import NavList from "../components/NavList";
+import MySider from "../components/MySider";
 import Headers from "../components/Headers";
+import TeacherList from "../pages/TeacherList";
 export default class Layout extends Component {
     constructor() {
         super();
@@ -10,9 +11,11 @@ export default class Layout extends Component {
         <div className="container">
             <Headers/>
             <div className="content">
-                <NavList/>
+                <div className="con-nav">
+                <MySider/>
+                </div>
                 <div className="content-mian">
-                   页面的内容展示
+                  <TeacherList/>
                 </div>
             </div>
         </div>

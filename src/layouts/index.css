@@ -36,7 +36,7 @@
 .content-mian{
     width: calc(100% - 320px );
     height: 100%;
-    background-color: skyblue;
+    padding:30px 15px;
     overflow-y: auto;
     margin-left: 320px;
 }

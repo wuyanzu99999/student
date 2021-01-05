@@ -1,60 +1,99 @@
 import { Component } from 'react'
-
-export default class teachers extends Component {
+import "./index.css";
+import { Table, Tag, Space } from 'antd';
+export default class TeacherList extends Component {
     constructor(){
         super();
         this.state={
-            users:[
+            columns:[
                 {
-                    userid:'01001',
-                    username:"karry"
+                    title: 'Name',
+                    dataIndex: 'name',
+                    key: 'name',
+                    render: text => <a>{text}</a>,
+                  },
+                  {
+                    title: 'Age',
+                    dataIndex: 'age',
+                    key: 'age',
+                  },
+                  {
+                    title: 'Address',
+                    dataIndex: 'address',
+                    key: 'address',
+                  },
+                  {
+                    title: 'Tags',
+                    key: 'tags',
+                    dataIndex: 'tags',
+                    render: tags=> (
+                      <>
+                        {tags.map(tag => {
+                          let color = tag.length > 5 ? 'geekblue' : 'green';
+                          if (tag === 'loser') {
+                            color = 'volcano';
+                          }
+                          return (
+                            <Tag color={color} key={tag}>
+                              {tag.toUpperCase()}
+                            </Tag>
+                          );
+                        })}
+                      </>
+                    ),
+                  },
+                  {
+                    title: 'Action',
+                    key: 'action',
+                    render: (text, record) => (
+                      <Space size="middle">
+                        <a>Invite {record.name}</a>
+                        <a>Delete</a>
+                      </Space>
+                    ),
+                  }, 
+            ],
+            data:[
+                {
+                  key: '1',
+                  name: 'John Brown',
+                  age: 32,
+                  address: 'New York No. 1 Lake Park',
+                  tags: ['nice', 'developer']
                 },
                 {
-                    userid:'01002',
-                    username:"Alen"
+                  key: '2',
+                  name: 'Jim Green',
+                  age: 42,
+                  address: 'London No. 1 Lake Park',
+                  tags: ['loser']
                 },
                 {
-                    userid:'01003',
-                    username:"Dalin"
+                  key: '3',
+                  name: 'Joe Black',
+                  age: 32,
+                  address: 'Sidney No. 1 Lake Park',
+                  tags: ['cool', 'teacher']
                 },
-                {
-                    userid:'01004',
-                    username:"suyawen"
-                }
-            ]
-        }
+              ]
+        } 
+
     }
     render() {
         return (
             <div>
                 <div className="control-box">
-                    <input type="text" />
-                    <input type="button" vlaue="查询" />
-                    <input type="button" vlaue="添加" />
+                    <div className="box-left">
+                        <h3 className="left-teacher">老师</h3>
+                        <p className="left-tit">仪表师/<span>老师</span></p>
+                    </div>
+                    <div className="box-right">
+                        <span>下载</span><br/>
+                        <span>+</span>
+                    </div>
                 </div>
                 <div className="show-box">
-                    <table>
-                        <tr>
-                            <td>工号</td>
-                            <td>用户名</td>
-                            <td>密码</td>
-                            <td>操作</td>
-                        </tr>
-                        <tr>
-                            {this.state.users.map(item=>(
-                                <tr>
-                                    <td>{item.userid}</td>
-                                    <td>{item.username}</td>
-                                    <td>**************</td>
-                                    <td>
-                                        <input type="button" vlaue="修改"/>
-                                        <input type="button" vlaue="删除"/>
-                                        <input type="button" vlaue="修改密码"/>
-                                    </td>
-                                </tr>
-                            ))}
-                        </tr>
-                    </table>
+                    <Table columns={this.state.columns} dataSource={this.state.data} />
                 </div>
             </div>
         )
