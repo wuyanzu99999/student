@@ -76,10 +76,14 @@
 .header .header-right .right-mes{
     height: 100%;
     width: 50px;
-    background-color: red;
+    font-size: 25px;
+    line-height: 60px;
+    color: #aaa;
+    text-align: center;
+    
 }
 .header .header-right .right-my{
     height: 100%;
     width: 80px;
-    background-color: yellow;
+    /* background-color: yellow; */
 }

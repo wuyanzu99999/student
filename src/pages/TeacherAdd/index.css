@@ -1,0 +1,21 @@
+.add-con{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+.teacher-add-title{
+    color: #aaa;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.teacher-add-title .detail{
+    color:#333;
+    font-size: 20px;
+
+}
+.add-password{
+    margin-top: 45px;
+}

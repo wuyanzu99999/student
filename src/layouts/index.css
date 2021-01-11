@@ -10,8 +10,7 @@
     right: 0;
     top: 0;
     z-index: 1001;
-    height: 60px;
-     
+    height: 60px;   
 }
 .content{
     width: 100%;
@@ -30,13 +29,12 @@
     width: 320px;
     z-index: 1001;
     padding: 15px;
-    height: 100%;
+    /* height: 100%; */
     overflow-y:auto;
 }
 .content-mian{
     width: calc(100% - 320px );
     height: 100%;
     padding:30px 15px;
-    overflow-y: auto;
     margin-left: 320px;
 }

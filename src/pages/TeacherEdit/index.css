@@ -1,0 +1,24 @@
+.edit-con{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+.edit-box-left{
+    width: 400px;
+}
+.edit-box-right{
+    width: 400px;
+    padding-top: 80px;
+}
+.edit-title{
+    color:#aaa;
+
+}
+.edit-title span{
+    color:#333;
+    font-size: 28px;
+}
+.edit-password{
+    margin-top: 45px;
+}

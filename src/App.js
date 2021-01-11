@@ -1,12 +1,16 @@
- import Layouts from './layouts';
+import React from "react";
 import './App.css';
-import { Menu } from 'antd';
-function App() {
-  return (
+import Layouts from './layouts';
+export default class App extends React.Component {
+
+  constructor(props){
+    super(props);
+  }
+ 
+  render = () => (
     <div className="App">
-      <Layouts/>
+        <Layouts {...this.props}/>
     </div>
-  );
+  )
 }
 
-export default App;

@@ -1,5 +1,5 @@
 .header-con{
-    width: 997px;
+    width: 100%;    
     height: 62px;
     margin-bottom: 30px;
     display: flex;
@@ -18,22 +18,25 @@
 .info-detail{
     color: #6c757d;
 }
-.right-btn{
+.header-right-btn{
     color: #FFBC53;
     border: 1px solid #FFBC53;
     display: inline-block;
     width: 78px;
     height: 39px;
-    padding: 5px 20px;
-    margin-left: 10px;
+    text-align: center;
+    line-height: 39px;
+    font-size: 20px;
+    border-radius: 5px;
 }
-.right-btn2{
+.header-right-btn span{
+    font-size: 16px;
+}
+.header-right-btn2{
     width: 45px;
     color: #fff;
     background-color: #FFBC53;
-    padding: 5px 8px;
-
-
+    margin-left: 10px;
 }
 .left-tit{
     color: #333;

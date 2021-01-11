@@ -1,0 +1,77 @@
+.view-wrap{
+    border: 1px solid #ececf5;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+    margin-bottom: 1.875rem;
+    padding: 30px;
+}
+.about{
+    height: 70px;
+    line-height: 70px;
+    padding-left: 30px;
+    font-size:24px;
+}
+.view-con{
+    height: 250px;
+    /* background-color:orange; */
+    display: flex;
+}
+.con-img{
+    width: 250px;
+    height: 250px;
+    margin-right: 30px;
+}
+.con-info{
+    line-height: 42px;
+    font-size: 18px;
+}
+.view-title{
+    height: 60px;
+    /* background-color: yellow; */
+    line-height: 60px;
+    font-size: 16px;
+
+}
+.view-charts{
+    height: 160px;
+    /* background-color: green; */
+    /* padding: 0 30px; */
+    display: flex;
+    justify-content: space-between;
+}
+.view-charts li{
+    width: 287px;
+    height: 160px;
+    background-color: #18aefa;
+    border-radius: 10px;
+    line-height: 160px;
+    color: #fff;
+    text-align: center;
+    font-size:40px;
+}
+.view-add{
+    /* height: 90px; */
+    /* background-color: saddlebrown; */
+    /* padding-top:30px;
+    padding-bottom: 15px; */
+}
+.view-add h4{
+    font-size: 20px;
+}
+.view-skill{
+    height: 366px;
+    /* background-color: purple; */
+}
+.view-edu{
+    /* background-color: pink; */
+}
+.view-edu h4,.view-skill h4{
+    height: 48px;
+    /* background-color: skyblue; */
+    font-size: 25px;
+    
+}
+.view-edu ul li{
+    height: 42px;
+    /* background-color:palegoldenrod */
+
+}

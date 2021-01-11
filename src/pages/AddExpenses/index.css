@@ -1,0 +1,11 @@
+.addexpenses-con{
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.add-title span{
+    color:#333;
+    font-size: 24px;
+}
