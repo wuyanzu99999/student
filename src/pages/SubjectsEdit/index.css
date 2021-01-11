@@ -1,0 +1,45 @@
+.subjectadd-box{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.subjectadd-text{
+    width:100%;
+    height:400px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 20px;
+    margin-top: 20px;
+ }
+ .subjectadd-textheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .subjectadd-headerleft{
+     font-size: 15px;
+ }
+ .subjectadd-headerright{
+     width: 88%;
+     height: 12px;
+     border-bottom: 1px solid rgba(0,0,0,.125);
+ }
+ .subjectadd-list {
+     height: 200px;
+ }
+ .subjectadd-list input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+}
+.subjectadd-list1{
+    width: 45%; 
+    float: left;
+}
+.subjectadd-list2{
+    width: 45%;
+    float: left;
+    margin-left: 20px;
+}
